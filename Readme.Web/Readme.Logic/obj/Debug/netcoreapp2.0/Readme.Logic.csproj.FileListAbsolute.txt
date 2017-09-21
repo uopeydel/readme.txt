@@ -7,3 +7,11 @@ C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.AssemblyInfo
 C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.AssemblyInfo.cs
 C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.dll
 C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.pdb
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.Common.dll
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.dll
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.EntityFramework.dll
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.MongoDB.dll
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.Common.pdb
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.pdb
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.EntityFramework.pdb
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.DataAccess.MongoDB.pdb

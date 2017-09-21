@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Readme.Common\Readme.Common.csproj" />
+    <ProjectReference Include="..\Readme.DataAccess.Dapper\Readme.DataAccess.Dapper.csproj" />
+    <ProjectReference Include="..\Readme.DataAccess.EntityFramework\Readme.DataAccess.EntityFramework.csproj" />
+    <ProjectReference Include="..\Readme.DataAccess.MongoDB\Readme.DataAccess.MongoDB.csproj" />
+  </ItemGroup>
+
 </Project>

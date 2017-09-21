@@ -10,8 +10,8 @@ using Microsoft.Extensions.Logging;
 using Readme.DataAccess.EntityFramework.Models;
 using Readme.DataAccess.EntityFramework.UnitOfWork.Interface;
 using Readme.DataAccess.EntityFramework;
-//using Readme.Logic.UnitOfWork.Interface;
-//using Readme.Logic.UnitOfWork.Implement;
+using Readme.Logic.UnitOfWork.Interface;
+using Readme.Logic.UnitOfWork.Implement;
 using VersionRouting;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.IdentityModel.Tokens;
@@ -114,7 +114,7 @@ namespace Readme.Web.Api
             services.AddScoped<IMongoDBUnitOfWork, MongoDBUnitOfWork>();
             services.AddScoped<IDapperUnitOfWork, DapperUnitOfWork>();
             services.AddScoped<IEntityUnitOfWork, EntityUnitOfWork>();
-            //services.AddScoped<ILogicUnitOfWork, LogicUnitOfWork>();
+            services.AddScoped<ILogicUnitOfWork, LogicUnitOfWork>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
