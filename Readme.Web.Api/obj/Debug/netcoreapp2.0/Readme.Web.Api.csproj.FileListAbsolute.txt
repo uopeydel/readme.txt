@@ -1,0 +1,11 @@
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Web.Api.deps.json
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Web.Api.runtimeconfig.json
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Web.Api.runtimeconfig.dev.json
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Web.Api.dll
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Web.Api.pdb
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.csprojResolveAssemblyReference.cache
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.csproj.CoreCompileInputs.cache
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.AssemblyInfoInputs.cache
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.AssemblyInfo.cs
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.dll
+C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.pdb

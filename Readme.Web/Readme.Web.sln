@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Web", "Readme.Web\Readme.Web.csproj", "{F1C4EC00-586F-4FA2-9444-251542E4F63C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Web.Api", "..\Readme.Web.Api\Readme.Web.Api.csproj", "{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F1C4EC00-586F-4FA2-9444-251542E4F63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C4EC00-586F-4FA2-9444-251542E4F63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C4EC00-586F-4FA2-9444-251542E4F63C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

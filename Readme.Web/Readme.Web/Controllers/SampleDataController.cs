@@ -9,6 +9,11 @@ namespace Readme_Web.Controllers
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
+        [HttpGet("value")]
+        public IActionResult value()
+        {
+            return Ok(Request.Host.Host + ":" + Request.Host.Port);
+        }
         private static string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
