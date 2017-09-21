@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Web", "Readme.Web\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Web.Api", "..\Readme.Web.Api\Readme.Web.Api.csproj", "{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Logic", "Readme.Logic\Readme.Logic.csproj", "{9EEC28DB-2A9E-46C8-8FDD-994CF90FFDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.DataAccess.MongoDB", "Readme.DataAccess.MongoDB\Readme.DataAccess.MongoDB.csproj", "{978A0A65-C0CA-4DC4-9DD1-82A7F36FFA56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.DataAccess.EntityFramework", "Readme.DataAccess.EntityFramework\Readme.DataAccess.EntityFramework.csproj", "{5F92D874-3133-425D-8EA8-48469ED3A35F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.DataAccess.Dapper", "Readme.DataAccess.Dapper\Readme.DataAccess.Dapper.csproj", "{F5F07802-A0D0-4EBB-8358-4F55F683A400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme.Common", "Readme.Common\Readme.Common.csproj", "{0B15DFC5-F3BF-414D-8BF3-520143833598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +31,26 @@ Global
 		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C45442A-4CEE-430E-BD62-5A9F22EDDA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEC28DB-2A9E-46C8-8FDD-994CF90FFDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEC28DB-2A9E-46C8-8FDD-994CF90FFDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEC28DB-2A9E-46C8-8FDD-994CF90FFDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEC28DB-2A9E-46C8-8FDD-994CF90FFDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978A0A65-C0CA-4DC4-9DD1-82A7F36FFA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978A0A65-C0CA-4DC4-9DD1-82A7F36FFA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978A0A65-C0CA-4DC4-9DD1-82A7F36FFA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978A0A65-C0CA-4DC4-9DD1-82A7F36FFA56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F92D874-3133-425D-8EA8-48469ED3A35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F92D874-3133-425D-8EA8-48469ED3A35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F92D874-3133-425D-8EA8-48469ED3A35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F92D874-3133-425D-8EA8-48469ED3A35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F07802-A0D0-4EBB-8358-4F55F683A400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F07802-A0D0-4EBB-8358-4F55F683A400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F07802-A0D0-4EBB-8358-4F55F683A400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F07802-A0D0-4EBB-8358-4F55F683A400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B15DFC5-F3BF-414D-8BF3-520143833598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B15DFC5-F3BF-414D-8BF3-520143833598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B15DFC5-F3BF-414D-8BF3-520143833598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B15DFC5-F3BF-414D-8BF3-520143833598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
