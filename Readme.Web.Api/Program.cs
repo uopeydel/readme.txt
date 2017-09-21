@@ -14,12 +14,24 @@ namespace Readme.Web.Api
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            var host = new WebHostBuilder()
+                //AddSignalR>
+                .UseSetting(WebHostDefaults.PreventHostingStartupKey, "true")
+                .ConfigureLogging((context, factory) =>
+                {
+                    factory.AddConfiguration(context.Configuration.GetSection("Logging"));
+                    factory.AddConsole();
+                    factory.AddDebug();
+                })
+                //<AddSignalR
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
+                //.UseUrls("http://192.168.20.108:1000") //for set mobile ip by use Kestrel
                 .Build();
+
+            host.Run();
+        }
     }
 }
