@@ -1,0 +1,8 @@
+[dotnet new --install Microsoft.AspNetCore.SpaTemplates::*]
+[dotnet new angular]
+[npm install]
+webpack --config webpack.config.vendor.js && webpack 
+click csproj
+save project
+[webpack]
+for compile
