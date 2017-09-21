@@ -5599,6 +5599,41 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Readme.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Readme.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Readme.Common.dll": {}
+        }
+      },
+      "Readme.DataAccess.EntityFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.3",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Readme.DataAccess.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Readme.DataAccess.EntityFramework.dll": {}
+        }
+      },
+      "Readme.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Readme.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Readme.Logic.dll": {}
+        }
       }
     }
   },
@@ -14217,6 +14252,21 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Readme.Common/1.0.0": {
+      "type": "project",
+      "path": "../Readme.Web/Readme.Common/Readme.Common.csproj",
+      "msbuildProject": "../Readme.Web/Readme.Common/Readme.Common.csproj"
+    },
+    "Readme.DataAccess.EntityFramework/1.0.0": {
+      "type": "project",
+      "path": "../Readme.Web/Readme.DataAccess.EntityFramework/Readme.DataAccess.EntityFramework.csproj",
+      "msbuildProject": "../Readme.Web/Readme.DataAccess.EntityFramework/Readme.DataAccess.EntityFramework.csproj"
+    },
+    "Readme.Logic/1.0.0": {
+      "type": "project",
+      "path": "../Readme.Web/Readme.Logic/Readme.Logic.csproj",
+      "msbuildProject": "../Readme.Web/Readme.Logic/Readme.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14238,6 +14288,9 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
+      "Readme.Common >= 1.0.0",
+      "Readme.DataAccess.EntityFramework >= 1.0.0",
+      "Readme.Logic >= 1.0.0",
       "StackifyMiddleware >= 2.0.3",
       "Swashbuckle.AspNetCore >= 1.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 1.0.0",
@@ -14279,7 +14332,17 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GIT\\Readme.Web\\Readme.Common\\Readme.Common.csproj": {
+              "projectPath": "C:\\GIT\\Readme.Web\\Readme.Common\\Readme.Common.csproj"
+            },
+            "C:\\GIT\\Readme.Web\\Readme.DataAccess.EntityFramework\\Readme.DataAccess.EntityFramework.csproj": {
+              "projectPath": "C:\\GIT\\Readme.Web\\Readme.DataAccess.EntityFramework\\Readme.DataAccess.EntityFramework.csproj"
+            },
+            "C:\\GIT\\Readme.Web\\Readme.Logic\\Readme.Logic.csproj": {
+              "projectPath": "C:\\GIT\\Readme.Web\\Readme.Logic\\Readme.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

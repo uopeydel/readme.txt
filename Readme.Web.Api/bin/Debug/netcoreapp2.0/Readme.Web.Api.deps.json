@@ -40,6 +40,9 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
+          "Readme.Common": "1.0.0",
+          "Readme.DataAccess.EntityFramework": "1.0.0",
+          "Readme.Logic": "1.0.0",
           "StackifyMiddleware": "2.0.3",
           "Swashbuckle.AspNetCore": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "1.0.0",
@@ -4597,6 +4600,35 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Readme.Common/1.0.0": {
+        "runtime": {
+          "Readme.Common.dll": {}
+        },
+        "compile": {
+          "Readme.Common.dll": {}
+        }
+      },
+      "Readme.DataAccess.EntityFramework/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.3",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.0"
+        },
+        "runtime": {
+          "Readme.DataAccess.EntityFramework.dll": {}
+        },
+        "compile": {
+          "Readme.DataAccess.EntityFramework.dll": {}
+        }
+      },
+      "Readme.Logic/1.0.0": {
+        "runtime": {
+          "Readme.Logic.dll": {}
+        },
+        "compile": {
+          "Readme.Logic.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -7132,6 +7164,21 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "Readme.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Readme.DataAccess.EntityFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Readme.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.NETCore.App/2.0.0": {
       "type": "package",

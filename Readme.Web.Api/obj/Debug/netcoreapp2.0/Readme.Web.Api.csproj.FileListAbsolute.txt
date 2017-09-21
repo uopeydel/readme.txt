@@ -9,3 +9,9 @@ C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.AssemblyInfoInputs.
 C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.AssemblyInfo.cs
 C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.dll
 C:\GIT\Readme.Web.Api\obj\Debug\netcoreapp2.0\Readme.Web.Api.pdb
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Common.dll
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.DataAccess.EntityFramework.dll
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Logic.dll
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Common.pdb
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.DataAccess.EntityFramework.pdb
+C:\GIT\Readme.Web.Api\bin\Debug\netcoreapp2.0\Readme.Logic.pdb

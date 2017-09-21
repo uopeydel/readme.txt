@@ -1,0 +1,9 @@
+C:\GIT\Readme.Web\Readme.Common\bin\Debug\netcoreapp2.0\Readme.Common.deps.json
+C:\GIT\Readme.Web\Readme.Common\bin\Debug\netcoreapp2.0\Readme.Common.dll
+C:\GIT\Readme.Web\Readme.Common\bin\Debug\netcoreapp2.0\Readme.Common.pdb
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.csprojResolveAssemblyReference.cache
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.csproj.CoreCompileInputs.cache
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.AssemblyInfoInputs.cache
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.AssemblyInfo.cs
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.dll
+C:\GIT\Readme.Web\Readme.Common\obj\Debug\netcoreapp2.0\Readme.Common.pdb

@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Connection "Server=DESKTOP-UGQL28B;Database=Readme;Persist Security Info=True;User ID=sa;Password=123456789" -Provider "Microsoft.EntityFrameworkCore.SqlServer" -OutputDir "Models" -Force

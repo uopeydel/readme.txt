@@ -37,4 +37,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Readme.Web\Readme.Common\Readme.Common.csproj" />
+    <ProjectReference Include="..\Readme.Web\Readme.DataAccess.EntityFramework\Readme.DataAccess.EntityFramework.csproj" />
+    <ProjectReference Include="..\Readme.Web\Readme.Logic\Readme.Logic.csproj" />
+  </ItemGroup>
+
 </Project>

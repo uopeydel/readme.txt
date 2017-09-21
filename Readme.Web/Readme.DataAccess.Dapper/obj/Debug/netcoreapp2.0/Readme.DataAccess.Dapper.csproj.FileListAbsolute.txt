@@ -1,0 +1,9 @@
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\bin\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.deps.json
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\bin\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.dll
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\bin\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.pdb
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.csprojResolveAssemblyReference.cache
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.csproj.CoreCompileInputs.cache
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.AssemblyInfoInputs.cache
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.AssemblyInfo.cs
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.dll
+C:\GIT\Readme.Web\Readme.DataAccess.Dapper\obj\Debug\netcoreapp2.0\Readme.DataAccess.Dapper.pdb

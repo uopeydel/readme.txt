@@ -1,0 +1,9 @@
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.Logic.deps.json
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.Logic.dll
+C:\GIT\Readme.Web\Readme.Logic\bin\Debug\netcoreapp2.0\Readme.Logic.pdb
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.csprojResolveAssemblyReference.cache
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.csproj.CoreCompileInputs.cache
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.AssemblyInfoInputs.cache
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.AssemblyInfo.cs
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.dll
+C:\GIT\Readme.Web\Readme.Logic\obj\Debug\netcoreapp2.0\Readme.Logic.pdb
