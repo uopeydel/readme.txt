@@ -7,24 +7,24 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-//using KwanJai.DataAccess.EntityFramework.Models;
-//using KwanJai.DataAccess.EntityFramework.UnitOfWork.Interface;
-//using KwanJai.DataAccess.EntityFramework;
-//using KwanJai.Logic.UnitOfWork.Interface;
-//using KwanJai.Logic.UnitOfWork.Implement;
+using Readme.DataAccess.EntityFramework.Models;
+using Readme.DataAccess.EntityFramework.UnitOfWork.Interface;
+using Readme.DataAccess.EntityFramework;
+//using Readme.Logic.UnitOfWork.Interface;
+//using Readme.Logic.UnitOfWork.Implement;
 using VersionRouting;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
-//using KwanJai.DataAccess.Dapper.UnitOfWork.Interface;
-//using KwanJai.DataAccess.Dapper.UnitOfWork.Implement;
-//using KwanJai.DataAccess.MongoDB.UnitOfWork.Interface;
-//using KwanJai.DataAccess.MongoDB.UnitOfWork.Implement;
+using Readme.DataAccess.Dapper.UnitOfWork.Interface;
+using Readme.DataAccess.Dapper.UnitOfWork.Implement;
+using Readme.DataAccess.MongoDB.UnitOfWork.Interface;
+using Readme.DataAccess.MongoDB.UnitOfWork.Implement;
 using Microsoft.AspNetCore.SignalR;
-using KwanJai.Web.Api.Hubs;
-//using KwanJai.Web.Api.Hubs;
+using Readme.Web.Api.Hubs;
+using Readme.Web.Api.Hubs;
 
 namespace Readme.Web.Api
 {
@@ -91,7 +91,7 @@ namespace Readme.Web.Api
             //add swagger interactive documentation
             services.AddSwaggerGen(config =>
             {
-                config.SwaggerDoc("v1", new Info { Title = "KwanJai API", Version = "v1" });
+                config.SwaggerDoc("v1", new Info { Title = "Readme API", Version = "v1" });
             });
 
 
@@ -110,10 +110,10 @@ namespace Readme.Web.Api
             services.AddSignalR(options => { });
             //<AddSignalR
 
-            //services.AddScoped<ReadmeDbContext>();
-            //services.AddScoped<IMongoDBUnitOfWork, MongoDBUnitOfWork>();
-            //services.AddScoped<IDapperUnitOfWork, DapperUnitOfWork>();
-            //services.AddScoped<IEntityUnitOfWork, EntityUnitOfWork>();
+            services.AddScoped<ReadmeContext>();
+            services.AddScoped<IMongoDBUnitOfWork, MongoDBUnitOfWork>();
+            services.AddScoped<IDapperUnitOfWork, DapperUnitOfWork>();
+            services.AddScoped<IEntityUnitOfWork, EntityUnitOfWork>();
             //services.AddScoped<ILogicUnitOfWork, LogicUnitOfWork>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -132,7 +132,7 @@ namespace Readme.Web.Api
             app.UseSwagger();
             app.UseSwaggerUI(config =>
             {
-                config.SwaggerEndpoint("/swagger/v1/swagger.json", "KwanJai API V1");
+                config.SwaggerEndpoint("/swagger/v1/swagger.json", "Readme API V1");
             });
 
             app.UseCors("AllowAll");

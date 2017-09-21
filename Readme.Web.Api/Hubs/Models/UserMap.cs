@@ -1,5 +1,5 @@
 ﻿using Readme.Web.Api.Hubs.Enum;
-namespace KwanJai.Web.Api
+namespace Readme.Web.Api
 {
     //Model
     public class UserMap

@@ -39,7 +39,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Readme.Web\Readme.Common\Readme.Common.csproj" />
+    <ProjectReference Include="..\Readme.Web\Readme.DataAccess.Dapper\Readme.DataAccess.Dapper.csproj" />
     <ProjectReference Include="..\Readme.Web\Readme.DataAccess.EntityFramework\Readme.DataAccess.EntityFramework.csproj" />
+    <ProjectReference Include="..\Readme.Web\Readme.DataAccess.MongoDB\Readme.DataAccess.MongoDB.csproj" />
     <ProjectReference Include="..\Readme.Web\Readme.Logic\Readme.Logic.csproj" />
   </ItemGroup>
 

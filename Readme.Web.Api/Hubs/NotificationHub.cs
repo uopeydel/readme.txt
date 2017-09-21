@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using Readme.Web.Api.Hubs.Enum;
-//using KwanJai.Logic.UnitOfWork.Interface;
+//using Readme.Logic.UnitOfWork.Interface;
 
-namespace KwanJai.Web.Api.Hubs
+namespace Readme.Web.Api.Hubs
 {
     public class NotificationHub : Hub
     {
