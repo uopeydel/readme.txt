@@ -17,7 +17,11 @@
 
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Compile Remove="__COPY_Controllers\**" />
     <Content Remove="ClientApp\**" />
+    <Content Remove="__COPY_Controllers\**" />
+    <EmbeddedResource Remove="__COPY_Controllers\**" />
+    <None Remove="__COPY_Controllers\**" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
