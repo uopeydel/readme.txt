@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "Readme.DataAccess.MongoDB/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "2.4.4"
+          "MongoDB.Driver": "2.4.4",
+          "MongoDB.Driver.Core": "2.4.4"
         },
         "runtime": {
           "Readme.DataAccess.MongoDB.dll": {}
