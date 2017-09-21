@@ -24,7 +24,6 @@ using Readme.DataAccess.MongoDB.UnitOfWork.Interface;
 using Readme.DataAccess.MongoDB.UnitOfWork.Implement;
 using Microsoft.AspNetCore.SignalR;
 using Readme.Web.Api.Hubs;
-using Readme.Web.Api.Hubs;
 
 namespace Readme.Web.Api
 {

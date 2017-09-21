@@ -4,17 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using Readme.Web.Api.Hubs.Enum;
-//using Readme.Logic.UnitOfWork.Interface;
+using Readme.Logic.UnitOfWork.Interface;
 
 namespace Readme.Web.Api.Hubs
 {
     public class NotificationHub : Hub
     {
-        //private readonly ILogicUnitOfWork LogicUnitOfWork;
+        private readonly ILogicUnitOfWork LogicUnitOfWork;
         private static List<UserMap> UserMapDataList = new List<UserMap>();
-        public NotificationHub(/*ILogicUnitOfWork logicUnitOfWork*/)
+        public NotificationHub(ILogicUnitOfWork logicUnitOfWork)
         {
-            //LogicUnitOfWork = logicUnitOfWork;
+            LogicUnitOfWork = logicUnitOfWork;
         }
 
         public override async Task OnDisconnectedAsync(Exception exception)
