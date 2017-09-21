@@ -9,7 +9,8 @@ namespace Readme.Web.Api.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        // GET api/values
+        // GET api/values    
+        //http://localhost:63135/api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
