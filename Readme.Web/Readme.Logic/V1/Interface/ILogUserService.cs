@@ -13,6 +13,14 @@ namespace Readme.Logic.V1.Interface
 
     public interface ILogUserService
     {
+        Task CreateUser(LogUsersMongoDto LogUserData);
+        Task<LogUsersMongoDto> GetUser(ObjectId _id, string Email);
+
+
+
+        #region MyRegion
+
+
         //Task<List<LogUsersDto>> GetUserByProject(string ProjectHook, string ProjectCode, int ProjectId);
         //Task<LogUsersDto> GetUserUID(string UID);
         //Task<LogUsersDto> CreateUser(LogUsersDto User);
@@ -22,5 +30,6 @@ namespace Readme.Logic.V1.Interface
         //Task<bool> CheckActiveStatus(string UID, ActiveStatusLineLogEnum ActiveStatus);
         //Task UpdateActiveStatus(LogUsersDto Cus);
         //Task<bool> CheckHaveRealTenantPhoneNumber(string PhoneNumber, string ChannelAccessToken);
+        #endregion
     }
 }

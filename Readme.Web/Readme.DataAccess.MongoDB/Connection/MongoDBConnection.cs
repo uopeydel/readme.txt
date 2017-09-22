@@ -20,7 +20,7 @@ namespace Readme.DataAccess.MongoDB
 
         public MongoDBConnection()
         {
-            ConnectionString = "mongodb://www.lolo.com:27017/ReadmeMongoDemo";
+            ConnectionString = "mongodb://localhost:27017/ReadmeMongoDemo";
             DatabaseName = MongoUrl.Create(ConnectionString).DatabaseName;
             MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(ConnectionString));
             //IsSSL = true;

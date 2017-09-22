@@ -11,7 +11,7 @@ namespace Readme.DataAccess.Dapper
 
         public ReadmeConnection()
         {
-            Connection = new SqlConnection("Server=bakserver.on.lk,1433;Database=Readme2;Persist Security Info=True;User ID=builk;Password=Maiiruu4Na");
+            Connection = new SqlConnection("Server=DESKTOP-UGQL28B.on.lk,1433;Database=Readme2;Persist Security Info=True;User ID=sa;Password=123456789");
         }
 
     }

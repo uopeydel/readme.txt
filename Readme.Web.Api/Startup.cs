@@ -145,10 +145,12 @@ namespace Readme.Web.Api
             });
 
             //UseCors allow origin for test signalR by fontend other Origins
-            app.UseCors(config => config.WithOrigins(
-                "http://localhost:8100",
-                "http://localhost:62454"
-                )
+            app.UseCors(config => config
+                //.WithOrigins(
+                //"http://localhost:8100",
+                //"http://localhost:62454"
+                //)
+                .AllowCredentials()
                 .AllowAnyOrigin()
                 .AllowAnyHeader()
                 .AllowAnyMethod());

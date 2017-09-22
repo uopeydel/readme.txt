@@ -10,11 +10,11 @@ namespace Readme.DataAccess.MongoDB.Models
     {
         [BsonId]
         public ObjectId _id { get; set; }
-        public string message_json { get; set; } = string.Empty;
-        public DateTime sent_timestamp { get; set; } = DateTime.Now;
-        public int message_type { get; set; } = 0;
-        public ObjectId user_id_source { get; set; } = ObjectId.Empty;
-        public ObjectId user_id_destination { get; set; } = ObjectId.Empty;
-        public int user_Readme_id { get; set; } = 0;
+        public string MessageJson { get; set; } = string.Empty;
+        public DateTime SentTimestamp { get; set; } = DateTime.Now;
+        public int MessageType { get; set; } = 0;
+        public ObjectId UserIdSource { get; set; } = ObjectId.Empty;
+        public ObjectId UserIdDestination { get; set; } = ObjectId.Empty;
+        
     }
 }

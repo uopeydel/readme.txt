@@ -29,6 +29,10 @@ namespace Readme.Logic.V1.Implement
             this.EntityUnitOfWork = EntityUnitOfWork;
         }
 
+
+        #region MyRegion
+
+
         //public async Task<List<LogMessagesDto>> GetMessagesByUserId(int userId)
         //{
         //    var LogMessagesData = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogMessages()
@@ -366,7 +370,7 @@ namespace Readme.Logic.V1.Implement
         //    await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers().InsertOneAsync(LogUserData);
         //    return User;
         //}
-
+        #endregion
 
     }
 }

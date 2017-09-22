@@ -10,12 +10,10 @@ namespace Readme.DataAccess.MongoDB.Models
     {
         [BsonId]
         public ObjectId _id { get; set; }
-        public string displayName { get; set; } = string.Empty;
-        public string pictureUrl { get; set; } = string.Empty;
-        public string statusMessage { get; set; } = string.Empty;
-        public DateTime followTimeStamp { get; set; } = DateTime.Now;
-        public string uid { get; set; } = string.Empty;
-        public string param_hook { get; set; } = string.Empty;
-        public int activeStatus { get; set; } = 0;
+        public string DisplayName { get; set; } = string.Empty;
+        public string StatusMessage { get; set; } = string.Empty;
+        public string PictureUrl { get; set; } = string.Empty;
+        public DateTime CreateTimeStamp { get; set; } = DateTime.Now;
+        public string Email { get; set; } = string.Empty;
     }
 }

@@ -28,6 +28,39 @@ namespace Readme.Logic.V1.Implement
             this.EntityUnitOfWork = EntityUnitOfWork;
         }
 
+        public async Task CreateUser(LogUsersMongoDto LogUserData)
+        {
+            var UserData = new LogUsers()
+            {
+                CreateTimeStamp = DateTime.Now,
+                DisplayName = LogUserData.DisplayName,
+                Email = LogUserData.Email,
+                PictureUrl = LogUserData.PictureUrl,
+                StatusMessage = LogUserData.StatusMessage,
+                _id = ObjectId.GenerateNewId()
+            };
+            await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers().InsertOneAsync(UserData);
+        }
+
+        public async Task<LogUsersMongoDto> GetUser(ObjectId _id , string Email)
+        {
+            var UserData = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers()
+                .Find(x => x._id == _id || x.Email.Equals(Email)).FirstOrDefaultAsync();
+            LogUsersMongoDto LogUsersData = new LogUsersMongoDto()
+            {
+                Email = UserData.Email,
+                _id = UserData._id,
+                CreateTimeStamp = UserData.CreateTimeStamp,
+                DisplayName = UserData.StatusMessage,
+                PictureUrl = UserData.PictureUrl,
+                StatusMessage = UserData.StatusMessage
+            };
+            return LogUsersData;
+        }
+
+        #region MyRegion
+
+
         //public async Task<List<LogUsersDto>> GetUserByProject(string ProjectHook, string ProjectCode, int ProjectId)
         //{
         //    string[] ListHook = await EntityUnitOfWork.LineAccountRepository.GetAll(
@@ -199,6 +232,6 @@ namespace Readme.Logic.V1.Implement
         //                )
         //        ).AnyAsync();
         //}
-
+        #endregion
     }
 }

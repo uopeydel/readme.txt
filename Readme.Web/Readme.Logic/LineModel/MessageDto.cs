@@ -28,7 +28,7 @@
         //imagemap
         public string baseUrl { get; set; }
         
-        public baseSizeDto baseSize { get; set; }
+        public BaseSizeDto baseSize { get; set; }
         
         public ActionDto[] actions { get; set; }
 
