@@ -32,11 +32,12 @@ namespace Readme.Logic.V1.Implement
         public async Task AddFriend(LogFriendsMongoDto LogFriendsData)
         {
             var IsAlreadyFriend = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogFriends()
-                .Find(x=>
+                .Find(x =>
                 (x.IdSource == LogFriendsData.IdSource && x.IdDestination == LogFriendsData.IdDestination)
                 ||
                 (x.IdSource == LogFriendsData.IdDestination && x.IdDestination == LogFriendsData.IdSource)
                 ).AnyAsync();
+
             if (IsAlreadyFriend)
             {
                 return;
@@ -53,7 +54,40 @@ namespace Readme.Logic.V1.Implement
 
                 //TODO: Send SignalR To Friend Destination alert have someone add friend
             }
-             
+        }
+
+        public async Task<List<LogUsersMongoDto>> GetFriendList(ObjectId UserId)
+        {
+            var ListFriend = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogFriends()
+                 .Find(x => x.IdDestination == UserId || x.IdSource == UserId)
+                 .Project(p => new LogFriends()
+                 {
+                     IdSource = p.IdSource,
+                     IdDestination = p.IdDestination
+                 })
+                 .ToListAsync();
+
+            var ListFriendId = ListFriend
+                .Where(w => w.IdSource != UserId)
+                .Select(s => s.IdSource).ToArray()
+                .Concat(
+                    ListFriend
+                    .Where(w2 => w2.IdDestination != UserId)
+                    .Select(s2 => s2.IdDestination).ToArray()
+                ).ToArray();
+
+            var FriendList = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers()
+                .Find(x => ListFriendId.Contains(x._id))
+                .Project(a => new LogUsersMongoDto
+                {
+                    _id = a._id,
+                    DisplayName = a.DisplayName,
+                    PictureUrl = a.PictureUrl,
+                    StatusMessage = a.StatusMessage
+                })
+                .ToListAsync();
+
+            return FriendList;
         }
     }
 }

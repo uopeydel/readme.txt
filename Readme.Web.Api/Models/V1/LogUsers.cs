@@ -8,8 +8,7 @@ namespace Readme.Web.Api.Models.V1
 {
     public class LogUsersModel
     {
-        [BsonId]
-        public ObjectId _id { get; set; }
+        public string _id { get; set; } = string.Empty;
         public string DisplayName { get; set; } = string.Empty;
         public string StatusMessage { get; set; } = string.Empty;
         public string PictureUrl { get; set; } = string.Empty;

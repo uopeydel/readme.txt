@@ -27,28 +27,51 @@ namespace Readme.Web.Api.Controllers.V1
         [HttpGet("GetUserByEmail/{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
-            var UserData = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Empty, email, "");
+            var DataUser = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Empty, email.Trim(), "");
+            LogUsersModel UserData = new LogUsersModel()
+            {
+                DisplayName = DataUser.DisplayName,
+                PictureUrl = DataUser.PictureUrl,
+                StatusMessage = DataUser.StatusMessage,
+                UID = DataUser.UID,
+                _id = DataUser._id.ToString()
+            };
             return Ok(UserData);
         }
 
         [HttpGet("GetUserById/{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
-            var UserData = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Parse(id), "", "");
+            var DataUser = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Parse(id), "", "");
+            LogUsersModel UserData = new LogUsersModel()
+            {
+                DisplayName = DataUser.DisplayName,
+                PictureUrl = DataUser.PictureUrl,
+                StatusMessage = DataUser.StatusMessage,
+                UID = DataUser.UID,
+                _id = DataUser._id.ToString()
+            };
             return Ok(UserData);
         }
 
         [HttpGet("GetUserByUID/{uid}")]
         public async Task<IActionResult> GetUserByDisplayName(string uid)
         {
-            var UserData = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Empty, "", uid);
+            var DataUser = await LogicUnitOfWork.LogUserService.GetUser(ObjectId.Empty, "", uid.Trim());
+            LogUsersModel UserData = new LogUsersModel()
+            {
+                DisplayName = DataUser.DisplayName,
+                PictureUrl = DataUser.PictureUrl,
+                StatusMessage = DataUser.StatusMessage,
+                UID = DataUser.UID,
+                _id = DataUser._id.ToString()
+            };
             return Ok(UserData);
         }
 
         [HttpPost("CreateUser")]
         public async Task<IActionResult> CreateUser([FromBody]LogUsersModel userData)
         {
-
             var LogUsersMongoData = new LogUsersMongoDto()
             {
                 DisplayName = userData.DisplayName,

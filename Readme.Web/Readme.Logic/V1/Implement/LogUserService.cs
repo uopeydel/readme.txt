@@ -34,15 +34,17 @@ namespace Readme.Logic.V1.Implement
             var context = new ValidationContext(LogUserData, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
             bool isValid = Validator.TryValidateObject(LogUserData, context, validationResults, true);
+            //TODO:Check email and uid if is already have don't save it to db
 
             var UserData = new LogUsers()
             {
+                UID = LogUserData.UID,
                 CreateTimeStamp = DateTime.Now,
                 DisplayName = LogUserData.DisplayName,
                 Email = LogUserData.Email,
                 PictureUrl = LogUserData.PictureUrl,
                 StatusMessage = LogUserData.StatusMessage,
-                _id = ObjectId.GenerateNewId()
+                _id = ObjectId.GenerateNewId(),
             };
             await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers().InsertOneAsync(UserData);
         }
@@ -51,6 +53,10 @@ namespace Readme.Logic.V1.Implement
         {
             var UserData = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers()
                 .Find(x => x._id == _id || x.Email.Equals(Email) || x.UID.Equals(UID)).FirstOrDefaultAsync();
+            if (UserData == null)
+            {
+                return null;
+            }
             LogUsersMongoDto LogUsersData = new LogUsersMongoDto()
             {
                 Email = UserData.Email,
