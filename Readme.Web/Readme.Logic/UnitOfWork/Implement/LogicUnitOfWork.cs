@@ -19,6 +19,8 @@ namespace Readme.Logic.UnitOfWork.Implement
 
         private ILogUserService ILogUserService;
         private ILogMessagesService ILogMessagesService;
+        private ILogFriendService ILogFriendService;
+
         private ILineService ILineService;
 
         private ISignalRService ISignalRService;
@@ -50,6 +52,13 @@ namespace Readme.Logic.UnitOfWork.Implement
         {
             get { return ILogMessagesService ?? (ILogMessagesService = new LogMessagesService(EntityUnitOfWork, MongoDBUnitOfWork)); }
             set { ILogMessagesService = value; }
+        }
+
+        
+        public ILogFriendService LogFriendService
+        {
+            get { return ILogFriendService ?? (ILogFriendService = new LogFriendService(EntityUnitOfWork, MongoDBUnitOfWork)); }
+            set { ILogFriendService = value; }
         }
 
         public ILineService LineService

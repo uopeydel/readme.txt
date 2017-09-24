@@ -13,5 +13,6 @@ namespace Readme.DataAccess.MongoDB.Common.Interface
     {
         IMongoCollection<LogUsers> GetCollectionLogUsers();
         IMongoCollection<LogMessages> GetCollectionLogMessages();
+        IMongoCollection<LogFriends> GetCollectionLogFriends();
     }
 }

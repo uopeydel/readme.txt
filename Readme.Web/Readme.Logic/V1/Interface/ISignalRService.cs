@@ -6,6 +6,6 @@ namespace Readme.Logic.V1.Interface
 {
     public interface ISignalRService
     {
-        Task Test(string Value);
+        //Task Test(string Value);
     }
 }

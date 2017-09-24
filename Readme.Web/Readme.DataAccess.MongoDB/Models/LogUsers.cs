@@ -15,5 +15,6 @@ namespace Readme.DataAccess.MongoDB.Models
         public string PictureUrl { get; set; } = string.Empty;
         public DateTime CreateTimeStamp { get; set; } = DateTime.Now;
         public string Email { get; set; } = string.Empty;
+        public string UID { get; set; } = string.Empty;
     }
 }

@@ -14,6 +14,7 @@ using Readme.Common.Enum;
 using MongoDB.Bson;
 using Microsoft.EntityFrameworkCore;
 using Readme.Logic.DomainModel.LineModels;
+using System.ComponentModel.DataAnnotations;
 
 namespace Readme.Logic.V1.Implement
 {
@@ -30,6 +31,10 @@ namespace Readme.Logic.V1.Implement
 
         public async Task CreateUser(LogUsersMongoDto LogUserData)
         {
+            var context = new ValidationContext(LogUserData, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
+            bool isValid = Validator.TryValidateObject(LogUserData, context, validationResults, true);
+
             var UserData = new LogUsers()
             {
                 CreateTimeStamp = DateTime.Now,
@@ -42,10 +47,10 @@ namespace Readme.Logic.V1.Implement
             await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers().InsertOneAsync(UserData);
         }
 
-        public async Task<LogUsersMongoDto> GetUser(ObjectId _id , string Email)
+        public async Task<LogUsersMongoDto> GetUser(ObjectId _id, string Email, string UID)
         {
             var UserData = await MongoDBUnitOfWork.MongoDBRepository.GetCollectionLogUsers()
-                .Find(x => x._id == _id || x.Email.Equals(Email)).FirstOrDefaultAsync();
+                .Find(x => x._id == _id || x.Email.Equals(Email) || x.UID.Equals(UID)).FirstOrDefaultAsync();
             LogUsersMongoDto LogUsersData = new LogUsersMongoDto()
             {
                 Email = UserData.Email,
@@ -53,7 +58,8 @@ namespace Readme.Logic.V1.Implement
                 CreateTimeStamp = UserData.CreateTimeStamp,
                 DisplayName = UserData.StatusMessage,
                 PictureUrl = UserData.PictureUrl,
-                StatusMessage = UserData.StatusMessage
+                StatusMessage = UserData.StatusMessage,
+                UID = UserData.UID,
             };
             return LogUsersData;
         }

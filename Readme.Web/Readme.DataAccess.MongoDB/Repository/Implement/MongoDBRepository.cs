@@ -32,5 +32,11 @@ namespace Readme.DataAccess.MongoDB.Common.Implement
             return Coll;
         }
 
+        public IMongoCollection<LogFriends> GetCollectionLogFriends()
+        {
+            var Coll = MongoDBConnection._database.GetCollection<LogFriends>("LogFriends");
+            return Coll;
+        }
+
     }
 }

@@ -14,7 +14,7 @@ namespace Readme.Logic.V1.Interface
     public interface ILogUserService
     {
         Task CreateUser(LogUsersMongoDto LogUserData);
-        Task<LogUsersMongoDto> GetUser(ObjectId _id, string Email);
+        Task<LogUsersMongoDto> GetUser(ObjectId _id, string Email, string UID);
 
 
 

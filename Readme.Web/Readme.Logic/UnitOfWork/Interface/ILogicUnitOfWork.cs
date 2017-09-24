@@ -12,6 +12,8 @@ namespace Readme.Logic.UnitOfWork.Interface
         
         ILogUserService LogUserService { get; set; }
         ILogMessagesService LogMessagesService { get; set; }
+        ILogFriendService LogFriendService { get; set; }
+
         ILineService LineService { get; set; }
         ISignalRService SignalRService { get; set; }
         

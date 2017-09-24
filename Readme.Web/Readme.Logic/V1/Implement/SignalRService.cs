@@ -24,13 +24,13 @@ namespace Readme.Logic.V1.Implement
             this.EntityUnitOfWork = EntityUnitOfWork;
         }
 
-        public async Task Test(string Value) {
-
-        }
+        //public async Task Test(string Value) {
+            
+        //}
 
         private async Task PostToOldApiForNoti(string JsonObjSerialize, string DomainName, string ApiUrl)
         {
-            var Readme = "http://localhost:54021";// Readme
+            //var Readme = "http://localhost:54021";// Readme
             var KjApp = "http://localhost:50795";// kjapp
 
             var DomainUrl = DomainName == "localhost" ? KjApp : DomainName;
