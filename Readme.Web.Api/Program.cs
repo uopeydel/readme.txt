@@ -28,7 +28,7 @@ namespace Readme.Web.Api
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
-                //.UseUrls("http://192.168.20.108:1000") //for set mobile ip by use Kestrel
+                .UseUrls("http://192.168.20.20:1000") //for set mobile ip by use Kestrel
                 .Build();
 
             host.Run();

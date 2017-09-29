@@ -17,6 +17,10 @@ namespace Readme.Web.Api.Hubs
             LogicUnitOfWork = logicUnitOfWork;
         }
 
+        public override async Task OnConnectedAsync()
+        {
+            var ss = "";
+        }
         public override async Task OnDisconnectedAsync(Exception exception)
         {
             var UserDisconnectIndex = UserMapDataList.FindIndex(a => a.ConnectionId == Context.ConnectionId);
@@ -38,6 +42,11 @@ namespace Readme.Web.Api.Hubs
                 UserMapDataList.Add(User);
                 await Clients.Client(Context.ConnectionId).InvokeAsync("RegisterUserMap", NotiObj);
             }
+        }
+
+        public async Task Send(string data)
+        {
+            await Clients.All.InvokeAsync("Send", data);
         }
 
         public async Task NotificationNewJob(List<Notification> NotiObjList)
