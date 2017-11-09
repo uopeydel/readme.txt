@@ -1,0 +1,558 @@
+﻿{
+  "Data": [
+    {
+      "Index": "",
+      "Name": "TaxInvoice_CrossIndustryInvoice",
+      "NameSpace": "rsm",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "1",
+      "Name": "ExchangedDocumentContext",
+      "NameSpace": "rsm",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "1.1",
+      "Name": "GuidelineSpecifiedDocumentContextParameter",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "1.1.1",
+      "Name": "ID",
+      "NameSpace": "ram",
+      "InnerText": "ER3-2560", //max 35
+      "Attribute": [
+        {
+          "Key": "schemeAgencyID",
+          "Value": "ETDA"
+        },
+        {
+          "Key": "schemeVersionID",
+          "Value": "v2.0"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "2",
+      "Name": "ExchangedDocument",
+      "NameSpace": "rsm",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "2.1",
+      "Name": "ID",
+      "NameSpace": "ram",
+      "InnerText": "IV201710005", //max 35
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "2.2",
+      "Name": "Name",
+      "NameSpace": "ram",
+      "InnerText": "ใบกำกับภาษี", //max 35
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "2.3",
+      "Name": "TypeCode", //(388 = ใบกำกับภาษี,,,,,T02 = ใบแจ้งหนี้/ใบกำกับภาษี,,,,,,T03 = ใบเสร็จรับเงิน/ใบกำกับภาษี,,,,,,T04 = ใบส่งของ/ใบกำกับภาษี)
+      "NameSpace": "ram",
+      "InnerText": "388", //max 35
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "2.4",
+      "Name": "IssueDateTime",
+      "NameSpace": "ram",
+      "InnerText": "2017-10-01T10:00:01", //max 35 "yyyy-MM-ddThh:mm:ss:sss"
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "2.8",
+      "Name": "CreationDateTime",
+      "NameSpace": "ram",
+      "InnerText": "2017-10-01T10:00:01",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3",
+      "Name": "SupplyChainTradeTransaction",
+      "NameSpace": "rsm",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1",
+      "Name": "ApplicableHeaderTradeAgreement",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.1",
+      "Name": "SellerTradeParty",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.1.3",
+      "Name": "Name",
+      "NameSpace": "ram",
+      "InnerText": "CODIUM Company Limited (Head Office)", //max 256 text
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.4",
+      "Name": "SpecifiedTaxRegistration",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.1.4.1",
+      "Name": "ID",
+      "NameSpace": "ram",
+      "InnerText": "012555601615100000", //max 35 tax id + subcode 5
+      "Attribute": [
+        {
+          "Key": "schemeAgencyID",
+          "Value": "RD"
+        },
+        {
+          "Key": "schemeID",
+          "Value": "TXID"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6",
+      "Name": "PostalTradeAddress",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.1.6.1",
+      "Name": "PostcodeCode",
+      "NameSpace": "ram",
+      "InnerText": "10330", //max 16
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6.92", //3.1.1.6.2
+      "Name": "BuildingNumber",
+      "NameSpace": "ram",
+      "InnerText": "865", //max 16
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6.9",
+      "Name": "CityName",
+      "NameSpace": "ram",
+      "InnerText": "1007", //max 70
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6.10",
+      "Name": "CitySubDivisionName",
+      "NameSpace": "ram",
+      "InnerText": "100702", //max 70
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6.11",
+      "Name": "CountryID",
+      "NameSpace": "ram",
+      "InnerText": "TH", //Country Id Type TH
+      "Attribute": [
+        {
+          "Key": "schemeID",
+          "Value": "3166-1 alpha-2"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.1.6.12",
+      "Name": "CountrySubDivisionID",
+      "NameSpace": "ram",
+      "InnerText": "10", //max 70
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2",
+      "Name": "BuyerTradeParty",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.2.3",
+      "Name": "Name",
+      "NameSpace": "ram",
+      "InnerText": "บริษัท สยาม เอสแบรนด์ จำกัด", //max 256 text
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.4",
+      "Name": "SpecifiedTaxRegistration",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.2.4.1",
+      "Name": "ID",
+      "NameSpace": "ram",
+      "InnerText": "0105554099784", //max 35 tax id
+      "Attribute": [
+        {
+          "Key": "schemeID",
+          "Value": "NIDN"
+        },
+        {
+          "Key": "schemeName",
+          "Value": "Tax Registration Number"
+        }
+      ],
+
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6",
+      "Name": "PostalTradeAddress",
+      "NameSpace": "ram",
+      "InnerText": null, //max 35
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.1.2.6.1",
+      "Name": "PostcodeCode",
+      "NameSpace": "ram",
+      "InnerText": "10250", //max 16
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6.92",
+      "Name": "BuildingNumber", //3.1.1.6.2
+      "NameSpace": "ram",
+      "InnerText": "1136", //max 16
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6.9",
+      "Name": "CityName",
+      "NameSpace": "ram",
+      "InnerText": "1035", //max 70 สวนหลวง
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6.10",
+      "Name": "CitySubDivisionName",
+      "NameSpace": "ram",
+      "InnerText": "103204", //max 70
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6.11",
+      "Name": "CountryID",
+      "NameSpace": "ram",
+      "InnerText": "TH", //Country Id Type TH
+      "Attribute": [
+        {
+          "Key": "schemeID",
+          "Value": "3166-1 alpha-2"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.1.2.6.12",
+      "Name": "CountrySubDivisionID", //Region ID
+      "NameSpace": "ram",
+      "InnerText": "10", //max 70
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.2",
+      "Name": "ApplicableHeaderTradeDelivery",
+      "NameSpace": "ram",
+      "InnerText": "",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3",
+      "Name": "ApplicableHeaderTradeSettlement",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.3.1",
+      "Name": "InvoiceCurrencyCode",
+      "NameSpace": "ram",
+      "InnerText": "THB",
+      "Attribute": [
+        {
+          "Key": "listID",
+          "Value": "ISO 4217 3A"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.2",
+      "Name": "ApplicableTradeTax",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.3.2.1",
+      "Name": "TypeCode",
+      "NameSpace": "ram",
+      "InnerText": "VAT",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.2.2",
+      "Name": "CalculatedRate",
+      "NameSpace": "ram",
+      "InnerText": "7",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.2.3",
+      "Name": "BasisAmount",
+      "NameSpace": "ram",
+      "InnerText": "7000",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.2.4",
+      "Name": "CalculatedAmount",
+      "NameSpace": "ram",
+      "InnerText": "490",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.5",
+      "Name": "SpecifiedTradeSettlementHeaderMonetarySummation",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.3.5.2",
+      "Name": "LineTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "7000",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.5.6",
+      "Name": "TaxBasisTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "7000",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.5.7",
+      "Name": "TaxTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "490",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.3.5.8",
+      "Name": "GrandTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "7490",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4", //[][][][][]
+      "Name": "IncludedSupplyChainTradeLineItem",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.1",
+      "Name": "AssociatedDocumentLineDocument",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.1.1",
+      "Name": "LineID",
+      "NameSpace": "ram",
+      "InnerText": "1",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.2",
+      "Name": "SpecifiedTradeProduct",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.2.1",
+      "Name": "ID",
+      "NameSpace": "ram",
+      "InnerText": "0001",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.2.3",
+      "Name": "Name",
+      "NameSpace": "ram",
+      "InnerText": "ค่าบริการรายเดือนระบบ",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.3",
+      "Name": "SpecifiedLineTradeAgreement",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.3.1",
+      "Name": "GrossPriceProductTradePrice",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.3.1.1",
+      "Name": "ChargeAmount",
+      "NameSpace": "ram",
+      "InnerText": "7000",
+      "Attribute": [],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.4",
+      "Name": "SpecifiedLineTradeDelivery",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.4.1",
+      "Name": "BilledQuantity",
+      "NameSpace": "ram",
+      "InnerText": "1",
+      "Attribute": [
+        {
+          "Key": "unitCode",
+          "Value": "NU" ////***see 8.18 in document and ข14
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.5",
+      "Name": "SpecifiedLineTradeSettlement",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.5.3",
+      "Name": "SpecifiedTradeSettlementLineMonetarySummation",
+      "NameSpace": "ram",
+      "InnerText": null,
+      "Attribute": [],
+      "IsLeaf": false
+    },
+    {
+      "Index": "3.4.5.3.2",
+      "Name": "NetLineTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "7490",
+      "Attribute": [
+        {
+          "Key": "currencyID",
+          "Value": "THB"
+        }
+      ],
+      "IsLeaf": true
+    },
+    {
+      "Index": "3.4.5.3.3",
+      "Name": "NetIncludingTaxesLineTotalAmount",
+      "NameSpace": "ram",
+      "InnerText": "7490",
+      "Attribute": [
+        {
+          "Key": "currencyID",
+          "Value": "THB"
+        }
+      ],
+      "IsLeaf": true
+    }
+  ]
+}
